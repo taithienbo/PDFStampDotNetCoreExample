@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "f5346983-229f-4da6-8e87-7ce5da643005",
+		"name": "PDFStampingExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sample request to stamp a PDF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "line1",
+							"value": "This is a test stamp",
+							"type": "text"
+						},
+						{
+							"key": "line2",
+							"value": "07/19/2019",
+							"type": "text"
+						},
+						{
+							"key": "line3",
+							"value": "taithienbo.com",
+							"type": "text"
+						},
+						{
+							"key": "LowerLeftX",
+							"value": "402",
+							"type": "text"
+						},
+						{
+							"key": "LowerLeftY",
+							"value": "600",
+							"type": "text"
+						},
+						{
+							"key": "UpperRightX",
+							"value": "575",
+							"type": "text"
+						},
+						{
+							"key": "UpperRightY",
+							"value": "900",
+							"type": "text"
+						},
+						{
+							"key": "pdf",
+							"value": null,
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/pdf/stamp",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"pdf",
+						"stamp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
